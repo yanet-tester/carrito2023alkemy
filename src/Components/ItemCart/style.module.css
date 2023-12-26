@@ -1,0 +1,140 @@
+.cartItem {
+  height: auto;
+  background-color: #3a3a3a;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  max-width: 300px;
+
+  img {
+    height: auto;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .dataContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .left {
+      padding-left: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      p {
+        font-weight: bold;
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 5px;
+      }
+
+      .buttons {
+        display: flex;
+        gap: 5px;
+        
+        button {
+          background-color: #ddd;
+          border: none;
+          cursor: pointer;
+          font-size: 12px;
+          padding: 5px 10px;
+          border-radius: 5px;
+          font-weight: bold;
+          color: #222222;
+          transition: background-color 0.3s, color 0.3s;
+        }
+
+        button:first-child {
+          background-color: #e0c0f6;
+        }
+
+        button:first-child:hover {
+          background-color: #662791;
+          color: #fff;
+        }
+
+        button:last-child {
+          background-color: #e0c0f6;
+        }
+
+        button:last-child:hover {
+          background-color: #662791;
+          color: #fff;
+        }
+      }
+    }
+
+    .right {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px;
+
+      div {
+        background-color: #2cb72e;
+        width: 20px;
+        height: 20px;
+        border-radius: 999px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+
+      .rightP {
+        font-size: 14px;
+        color: #9ba09b;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+
+      .rightPtotal {
+        font-size: 16px;
+        color: #9ba09b;
+        font-weight: bold;
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .cartItem {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .cartItem {
+    flex-direction: row;
+    align-items: flex-start;
+    
+    img {
+      margin-bottom: 0;
+      margin-right: 10px;
+    }
+
+    .dataContainer {
+      .left {
+        width: auto;
+        margin-bottom: 0;
+      }
+
+      .right {
+        width: auto;
+      }
+    }
+  }
+}

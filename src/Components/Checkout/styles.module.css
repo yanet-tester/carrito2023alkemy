@@ -1,0 +1,80 @@
+.checkoutContainer {
+  max-width: 400px;
+  margin: 0 auto;
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+
+}
+
+.errorInput {
+  /* Estilos para resaltar el borde del input en caso de error */
+  border: 1px solid red;
+}
+
+.errorText {
+  /* Estilos para el texto de error */
+  color: red;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.redText {
+  /* Estilos para texto en rojo */
+  color: red;
+}
+
+.purchaseMessage {
+  /* Estilos para el mensaje de compra */
+  color: green;
+  margin-top: 10px;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  color: #fff; /* Color del texto */
+  background-color: #333; /* Color de fondo del botón */
+  padding: 5px 10px;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+}
+
+.closeButton:hover {
+  background-color: #555; /* Cambia el color de fondo al pasar el ratón sobre el botón */
+}

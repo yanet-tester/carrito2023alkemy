@@ -1,0 +1,15 @@
+.home{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #E3D1EC;
+    padding-bottom: 100px;
+}
+.h2{
+    text-align: center;  
+  font-size: 44px; 
+  color: #CB1F9C;
+  
+}
